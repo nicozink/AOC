@@ -20,7 +20,7 @@ SET_SOURCE_FILES_PROPERTIES(${SRC_RESOURCES} PROPERTIES VS_COPY_TO_OUT_DIR "Pres
 set_property(TARGET Solutions PROPERTY VS_DOTNET_REFERENCES
 	"System"
 	"Microsoft.VisualStudio.QualityTools.UnitTestFramework"
-	)
+)
 
 set_target_properties(Solutions
 	PROPERTIES
@@ -33,11 +33,3 @@ add_executable(AOC2021 Program.cs)
 target_link_libraries(AOC2021 Solutions)
 
 set_property(TARGET AOC2021 PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION ${FRAMEWORK_VERSION})
-
-#add_library(Tests SHARED ${SRC_TEST})
-
-#set_property(TARGET Tests PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION ${FRAMEWORK_VERSION})
-
-
-
-#target_link_libraries(Tests Solutions)
