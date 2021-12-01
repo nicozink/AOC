@@ -1,0 +1,27 @@
+name: Builds
+
+on:
+  push:
+
+jobs:
+  build_job:
+    runs-on: [windows-latest]
+
+    name: Build
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        path: ${{ github.event.repository.name }}
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+    - name: Configure
+      shell: cmd
+      run: cmake ${{ github.event.repository.name }} -B build
+    - name: Build
+      shell: cmd
+      run: cmake --build build
+    - name: MSTest
+      shell: powershell
+      working-directory: build\Debug
+      run: '& "$(vswhere -property installationPath)\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" Tests.dll'
