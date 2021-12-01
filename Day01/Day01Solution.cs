@@ -49,7 +49,7 @@ namespace Solutions
     /// https://adventofcode.com/2021/day/1
     /// </summary>
     [SolutionClass(Day = 1)]
-    public class Day01
+    public class Day01Solution
     {
         /// <summary>
         /// Reads in a file, and counts the the number of
