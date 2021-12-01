@@ -15,6 +15,8 @@ jobs:
         path: ${{ github.event.repository.name }}
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1
+      with:
+        vs-version: '17.0.1'
     - name: Configure
       shell: cmd
       run: cmake ${{ github.event.repository.name }} -B build
