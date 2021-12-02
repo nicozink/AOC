@@ -84,27 +84,15 @@ namespace Solutions
 
         #region Solve Problems
 
-        public int SolveExample1()
-        {
-            return CountSingleIncreased("Day01/Example.txt");
-        }
+        public int SolveExample1() => CountSingleIncreased("Day01/Example.txt");
 
         [SolutionMethod(Part = 1)]
-        public int SolvePart1()
-        {
-            return CountSingleIncreased("Day01/Input.txt");
-        }
+        public int SolvePart1() => CountSingleIncreased("Day01/Input.txt");
 
-        public int SolveExample2()
-        {
-            return CountTripleIncreased("Day01/Example.txt");
-        }
+        public int SolveExample2() => CountTripleIncreased("Day01/Example.txt");
         
         [SolutionMethod(Part = 2)]
-        public int SolvePart2()
-        {
-            return CountTripleIncreased("Day01/Input.txt");
-        }
+        public int SolvePart2() => CountTripleIncreased("Day01/Input.txt");
 
         #endregion
     }

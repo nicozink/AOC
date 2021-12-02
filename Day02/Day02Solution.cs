@@ -92,27 +92,15 @@ namespace Solutions
 
         #region Solve Problems
 
-        public int SolveExample1()
-        {
-            return FollowCommands("Day02/Example.txt", false);
-        }
+        public int SolveExample1() => FollowCommands("Day02/Example.txt", false);
 
         [SolutionMethod(Part = 1)]
-        public int SolvePart1()
-        {
-            return FollowCommands("Day02/Input.txt", false);
-        }
+        public int SolvePart1() => FollowCommands("Day02/Input.txt", false);
 
-        public int SolveExample2()
-        {
-            return FollowCommands("Day02/Example.txt", true);
-        }
+        public int SolveExample2() => FollowCommands("Day02/Example.txt", true);
 
         [SolutionMethod(Part = 2)]
-        public int SolvePart2()
-        {
-            return FollowCommands("Day02/Input.txt", true);
-        }
+        public int SolvePart2() => FollowCommands("Day02/Input.txt", true);
 
         #endregion
     }
