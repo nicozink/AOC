@@ -37,7 +37,7 @@ namespace Solutions
         /// <summary>
         /// Stores the middle score for each character.
         /// </summary>
-        Dictionary<char, int> middleScores = new()
+        readonly Dictionary<char, int> middleScores = new()
         {
             { ')', 1},
             { ']', 2},
