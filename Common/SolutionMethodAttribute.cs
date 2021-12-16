@@ -10,9 +10,9 @@ namespace Common
 	/// </summary>
 	public class SolutionMethodAttribute : Attribute
 	{
-		public static SolutionMethodAttribute GetAttribute(MethodInfo mi)
+		public static SolutionMethodAttribute? GetAttribute(MethodInfo mi)
 		{
-			return (SolutionMethodAttribute)mi.GetCustomAttributes(typeof(Common.SolutionMethodAttribute), false).FirstOrDefault();
+			return (SolutionMethodAttribute?)mi.GetCustomAttributes(typeof(Common.SolutionMethodAttribute), false).FirstOrDefault();
 		}
 
 		/// <summary>

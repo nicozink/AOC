@@ -10,8 +10,17 @@ namespace Common
     /// <typeparam name="T">The array type.</typeparam>
     public class ArrayComparer<T> : IEqualityComparer<T[]>
     {
-        public bool Equals(T[] first, T[] second)
+        public bool Equals(T[]? first, T[]? second)
         {
+            if (first == second)
+            {
+                return true;
+            }
+            else if (first == null || second == null)
+            {
+                return false;
+            }
+
             return Enumerable.SequenceEqual(first, second);
         }
 
@@ -20,7 +29,7 @@ namespace Common
             int hash = 17;
             foreach (T element in array)
             {
-                hash = hash * 31 + element.GetHashCode();
+                hash = hash * 31 + element!.GetHashCode();
             }
             
             return hash;

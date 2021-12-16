@@ -9,11 +9,11 @@ namespace Common
 	/// </summary>
 	public class SolutionClassAttribute : Attribute
 	{
-		public static SolutionClassAttribute GetAttribute(Type t)
+		public static SolutionClassAttribute? GetAttribute(Type t)
 		{
 			var attrs = System.Attribute.GetCustomAttributes(t);
 
-			return (Common.SolutionClassAttribute)attrs.FirstOrDefault(x => x is Common.SolutionClassAttribute);
+			return (Common.SolutionClassAttribute?)attrs.FirstOrDefault(x => x is Common.SolutionClassAttribute);
 		}
 
 		/// <summary>

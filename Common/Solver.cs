@@ -16,7 +16,7 @@ namespace Common
 			// These hold the solutions for each day.
 			types = Assembly.Load("Solutions").GetTypes()
 					.Where(x => SolutionClassAttribute.GetAttribute(x) != null)
-					.ToDictionary(x => SolutionClassAttribute.GetAttribute(x).Day);
+					.ToDictionary(x => SolutionClassAttribute.GetAttribute(x)!.Day);
 		}
 
 		/// <summary>
@@ -45,7 +45,7 @@ namespace Common
 
 			var methods = solutionType.GetMethods()
 				.Where(m => SolutionMethodAttribute.GetAttribute(m) != null)
-				.ToDictionary(x => SolutionMethodAttribute.GetAttribute(x).Part);
+				.ToDictionary(x => SolutionMethodAttribute.GetAttribute(x)!.Part);
 
 			if (methods.ContainsKey(part))
 			{
