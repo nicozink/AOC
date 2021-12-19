@@ -9,25 +9,25 @@ namespace Tests
         [TestMethod]
         public void TestExample1()
         {
-            Assert.AreEqual(0, Day19Solution.SolveExample1());
+            Assert.AreEqual(79, Day19Solution.SolveExample1());
         }
 
         [TestMethod]
         public void TestSolution1()
         {
-            Assert.AreEqual(0, Day19Solution.SolvePart1());
+            Assert.AreEqual(353, Day19Solution.SolvePart1());
         }
 
         [TestMethod]
         public void TestExample2()
         {
-            Assert.AreEqual(0, Day19Solution.SolveExample2());
+            Assert.AreEqual(3621, Day19Solution.SolveExample2());
         }
 
         [TestMethod]
         public void TestSolution2()
         {
-            Assert.AreEqual(0, Day19Solution.SolvePart2());
+            Assert.AreEqual(10832, Day19Solution.SolvePart2());
         }
     }
 }
