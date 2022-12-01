@@ -14,7 +14,7 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1
     - name: Build
-      run: dotnet build AOC2021.sln --configuration Release
+      run: dotnet build AOC.sln --configuration Release
     - name: MSTest
       shell: powershell
       working-directory: bin\Release\net6.0
