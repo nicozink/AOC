@@ -121,16 +121,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(26397, GetSyntaxErrorScore("Day10/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(26397, GetSyntaxErrorScore("AOC2021/Day10/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(265527, GetSyntaxErrorScore("Day10/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(265527, GetSyntaxErrorScore("AOC2021/Day10/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(288957, GetMiddleScore("Day10/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(288957, GetMiddleScore("AOC2021/Day10/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(3969823589, GetMiddleScore("Day10/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(3969823589, GetMiddleScore("AOC2021/Day10/Input.txt"));
 
         #endregion
     }

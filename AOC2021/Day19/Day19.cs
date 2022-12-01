@@ -242,16 +242,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(79, CountNumberOfProbes("Day19/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(79, CountNumberOfProbes("AOC2021/Day19/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(353, CountNumberOfProbes("Day19/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(353, CountNumberOfProbes("AOC2021/Day19/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(3621, CountMaxManhattanDistance("Day19/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(3621, CountMaxManhattanDistance("AOC2021/Day19/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(10832, CountMaxManhattanDistance("Day19/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(10832, CountMaxManhattanDistance("AOC2021/Day19/Input.txt"));
 
         #endregion
     }

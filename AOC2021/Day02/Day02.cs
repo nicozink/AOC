@@ -96,25 +96,25 @@ namespace AOC2021
         [TestMethod]
         public void SolveExample1()
         {
-            Assert.AreEqual(150, FollowCommands("Day02/Example.txt", false));
+            Assert.AreEqual(150, FollowCommands("AOC2021/Day02/Example.txt", false));
         }
 
         [TestMethod]
         public void SolvePart1()
         {
-            Assert.AreEqual(1507611, FollowCommands("Day02/Input.txt", false));
+            Assert.AreEqual(1507611, FollowCommands("AOC2021/Day02/Input.txt", false));
         }
 
         [TestMethod]
         public void SolveExample2()
         {
-            Assert.AreEqual(900, FollowCommands("Day02/Example.txt", true));
+            Assert.AreEqual(900, FollowCommands("AOC2021/Day02/Example.txt", true));
         }
 
         [TestMethod]
         public void SolvePart2()
         {
-            Assert.AreEqual(1880593125, FollowCommands("Day02/Input.txt", true));
+            Assert.AreEqual(1880593125, FollowCommands("AOC2021/Day02/Input.txt", true));
         }
 
         #endregion

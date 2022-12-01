@@ -145,16 +145,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(1656, CountFlashes("Day11/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(1656, CountFlashes("AOC2021/Day11/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(1743, CountFlashes("Day11/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(1743, CountFlashes("AOC2021/Day11/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(195, CountSteps("Day11/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(195, CountSteps("AOC2021/Day11/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(364, CountSteps("Day11/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(364, CountSteps("AOC2021/Day11/Input.txt"));
 
         #endregion
     }

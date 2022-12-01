@@ -160,7 +160,7 @@ namespace AOC2015
         [TestMethod]
         public void TestExample()
         {
-            var values = ReadInput("Day07/Example.txt");
+            var values = ReadInput("AOC2015/Day07/Example.txt");
 
             Solve(values);
 
@@ -175,10 +175,10 @@ namespace AOC2015
         }
 
         [TestMethod]
-        public void TestSolution1() => Assert.AreEqual(956, SolveValueA("Day07/Input.txt"));
+        public void TestSolution1() => Assert.AreEqual(956, SolveValueA("AOC2015/Day07/Input.txt"));
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual(40149, SolveLoopedValueA("Day07/Input.txt"));
+        public void TestSolution2() => Assert.AreEqual(40149, SolveLoopedValueA("AOC2015/Day07/Input.txt"));
 
         #endregion
     }

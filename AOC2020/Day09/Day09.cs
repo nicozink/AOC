@@ -103,7 +103,7 @@ namespace AOC2020
         [TestMethod]
         public void SolveExample1()
         {
-            var encription = new Encription("Day09/Example.txt", 5);
+            var encription = new Encription("AOC2020/Day09/Example.txt", 5);
             long result = encription.GetInvalidNumber();
 
             Assert.AreEqual(127, result);
@@ -112,7 +112,7 @@ namespace AOC2020
         [TestMethod]
         public void SolvePart1()
         {
-            var encription = new Encription("Day09/Input.txt", 25);
+            var encription = new Encription("AOC2020/Day09/Input.txt", 25);
             long result = encription.GetInvalidNumber();
 
             Assert.AreEqual(41682220, result);
@@ -121,7 +121,7 @@ namespace AOC2020
         [TestMethod]
         public void SolveExample2()
         {
-            var encription = new Encription("Day09/Example.txt", 5);
+            var encription = new Encription("AOC2020/Day09/Example.txt", 5);
             long result = encription.GetEncryptionWeakness();
 
             Assert.AreEqual(62, result);
@@ -130,7 +130,7 @@ namespace AOC2020
         [TestMethod]
         public void SolvePart2()
         {
-            var encription = new Encription("Day09/Input.txt", 25);
+            var encription = new Encription("AOC2020/Day09/Input.txt", 25);
             long result = encription.GetEncryptionWeakness();
 
             Assert.AreEqual(5388976, result);

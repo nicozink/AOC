@@ -276,16 +276,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(35, CountLitPixels("Day20/Example.txt", 2));
+        public void SolveExample1() => Assert.AreEqual(35, CountLitPixels("AOC2021/Day20/Example.txt", 2));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(5819, CountLitPixels("Day20/Input.txt", 2));
+        public void SolvePart1() => Assert.AreEqual(5819, CountLitPixels("AOC2021/Day20/Input.txt", 2));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(3351, CountLitPixels("Day20/Example.txt", 50));
+        public void SolveExample2() => Assert.AreEqual(3351, CountLitPixels("AOC2021/Day20/Example.txt", 50));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(18516, CountLitPixels("Day20/Input.txt", 50));
+        public void SolvePart2() => Assert.AreEqual(18516, CountLitPixels("AOC2021/Day20/Input.txt", 50));
 
         #endregion
     }

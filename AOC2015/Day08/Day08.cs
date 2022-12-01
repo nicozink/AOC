@@ -116,7 +116,7 @@ namespace AOC2015
         }
 
         [TestMethod]
-        public void TestSolution1() => Assert.AreEqual(1342, CalculateFileDiff1("Day08/Input.txt"));
+        public void TestSolution1() => Assert.AreEqual(1342, CalculateFileDiff1("AOC2015/Day08/Input.txt"));
 
         [TestMethod]
         public void TestExample2()
@@ -128,7 +128,7 @@ namespace AOC2015
         }
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual(2074, CalculateFileDiff2("Day08/Input.txt"));
+        public void TestSolution2() => Assert.AreEqual(2074, CalculateFileDiff2("AOC2015/Day08/Input.txt"));
 
         #endregion
     }

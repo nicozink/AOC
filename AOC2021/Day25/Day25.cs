@@ -169,10 +169,10 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample() => Assert.AreEqual(58, CountNumberOfMoves("Day25/Example.txt"));
+        public void SolveExample() => Assert.AreEqual(58, CountNumberOfMoves("AOC2021/Day25/Example.txt"));
 
         [TestMethod]
-        public void SolvePart() => Assert.AreEqual(482, CountNumberOfMoves("Day25/Input.txt"));
+        public void SolvePart() => Assert.AreEqual(482, CountNumberOfMoves("AOC2021/Day25/Input.txt"));
 
         #endregion
     }

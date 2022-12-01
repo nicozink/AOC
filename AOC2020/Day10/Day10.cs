@@ -149,22 +149,22 @@ namespace AOC2020
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(35, GetJoltProduct("Day10/Example1.txt"));
+        public void SolveExample1() => Assert.AreEqual(35, GetJoltProduct("AOC2020/Day10/Example1.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(220, GetJoltProduct("Day10/Example2.txt"));
+        public void SolveExample2() => Assert.AreEqual(220, GetJoltProduct("AOC2020/Day10/Example2.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(2277, GetJoltProduct("Day10/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(2277, GetJoltProduct("AOC2020/Day10/Input.txt"));
 
         [TestMethod]
-        public void SolveExample3() => Assert.AreEqual(8, CountValidArrangements("Day10/Example1.txt"));
+        public void SolveExample3() => Assert.AreEqual(8, CountValidArrangements("AOC2020/Day10/Example1.txt"));
 
         [TestMethod]
-        public void SolveExample4() => Assert.AreEqual(19208, CountValidArrangements("Day10/Example2.txt"));
+        public void SolveExample4() => Assert.AreEqual(19208, CountValidArrangements("AOC2020/Day10/Example2.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(37024595836928, CountValidArrangements("Day10/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(37024595836928, CountValidArrangements("AOC2020/Day10/Input.txt"));
 
         #endregion
     }

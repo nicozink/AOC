@@ -103,10 +103,10 @@ namespace AOC2015
         public void TestExample2() => Assert.AreEqual(43, CalculatePaper(new(1, 1, 10)));
 
         [TestMethod]
-        public void TestSolution1() => Assert.AreEqual(1588178, SolvePaper("Day02/Input.txt"));
+        public void TestSolution1() => Assert.AreEqual(1588178, SolvePaper("AOC2015/Day02/Input.txt"));
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual(3783758, SolveRibbon("Day02/Input.txt"));
+        public void TestSolution2() => Assert.AreEqual(3783758, SolveRibbon("AOC2015/Day02/Input.txt"));
 
         #endregion
     }

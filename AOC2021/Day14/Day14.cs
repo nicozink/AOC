@@ -139,16 +139,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(1588, CountExpanded("Day14/Example.txt", 10));
+        public void SolveExample1() => Assert.AreEqual(1588, CountExpanded("AOC2021/Day14/Example.txt", 10));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(3906, CountExpanded("Day14/Input.txt", 10));
+        public void SolvePart1() => Assert.AreEqual(3906, CountExpanded("AOC2021/Day14/Input.txt", 10));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(2188189693529, CountExpanded("Day14/Example.txt", 40));
+        public void SolveExample2() => Assert.AreEqual(2188189693529, CountExpanded("AOC2021/Day14/Example.txt", 40));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(4441317262452, CountExpanded("Day14/Input.txt", 40));
+        public void SolvePart2() => Assert.AreEqual(4441317262452, CountExpanded("AOC2021/Day14/Input.txt", 40));
 
         #endregion
     }

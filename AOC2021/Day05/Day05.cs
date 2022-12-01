@@ -127,16 +127,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(5, CountDangerZones("Day05/Example.txt", false));
+        public void SolveExample1() => Assert.AreEqual(5, CountDangerZones("AOC2021/Day05/Example.txt", false));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(6283, CountDangerZones("Day05/input.txt", false));
+        public void SolvePart1() => Assert.AreEqual(6283, CountDangerZones("AOC2021/Day05/input.txt", false));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(12, CountDangerZones("Day05/Example.txt", true));
+        public void SolveExample2() => Assert.AreEqual(12, CountDangerZones("AOC2021/Day05/Example.txt", true));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(18864, CountDangerZones("Day05/input.txt", true));
+        public void SolvePart2() => Assert.AreEqual(18864, CountDangerZones("AOC2021/Day05/input.txt", true));
 
         #endregion
     }

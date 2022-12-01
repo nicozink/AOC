@@ -1,2 +1,2 @@
-# AOC2021
-https://adventofcode.com/2021
+# AOC
+https://adventofcode.com/

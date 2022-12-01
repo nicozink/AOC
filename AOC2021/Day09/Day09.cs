@@ -136,16 +136,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(15, SumLowPoints("Day09/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(15, SumLowPoints("AOC2021/Day09/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(436, SumLowPoints("Day09/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(436, SumLowPoints("AOC2021/Day09/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(1134, MultiplyBasins("Day09/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(1134, MultiplyBasins("AOC2021/Day09/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(1317792, MultiplyBasins("Day09/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(1317792, MultiplyBasins("AOC2021/Day09/Input.txt"));
 
         #endregion
     }

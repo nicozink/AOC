@@ -406,16 +406,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(4140, GetMagnitudeSum("Day18/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(4140, GetMagnitudeSum("AOC2021/Day18/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(4132, GetMagnitudeSum("Day18/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(4132, GetMagnitudeSum("AOC2021/Day18/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(3993, GetMaxMagnitudeCombo("Day18/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(3993, GetMaxMagnitudeCombo("AOC2021/Day18/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(4685, GetMaxMagnitudeCombo("Day18/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(4685, GetMaxMagnitudeCombo("AOC2021/Day18/Input.txt"));
 
         #endregion
     }

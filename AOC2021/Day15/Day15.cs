@@ -135,16 +135,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(40, CountShortestPath("Day15/Example.txt", 1));
+        public void SolveExample1() => Assert.AreEqual(40, CountShortestPath("AOC2021/Day15/Example.txt", 1));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(386, CountShortestPath("Day15/Input.txt", 1));
+        public void SolvePart1() => Assert.AreEqual(386, CountShortestPath("AOC2021/Day15/Input.txt", 1));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(315, CountShortestPath("Day15/Example.txt", 5));
+        public void SolveExample2() => Assert.AreEqual(315, CountShortestPath("AOC2021/Day15/Example.txt", 5));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(2806, CountShortestPath("Day15/Input.txt", 5));
+        public void SolvePart2() => Assert.AreEqual(2806, CountShortestPath("AOC2021/Day15/Input.txt", 5));
 
         #endregion
     }

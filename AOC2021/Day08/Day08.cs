@@ -183,16 +183,16 @@ namespace AOC2021
         #region Solve Problems
         
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(26, CountEasyNumbers("Day08/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(26, CountEasyNumbers("AOC2021/Day08/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(504, CountEasyNumbers("Day08/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(504, CountEasyNumbers("AOC2021/Day08/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(61229, AddNumbers("Day08/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(61229, AddNumbers("AOC2021/Day08/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(1073431, AddNumbers("Day08/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(1073431, AddNumbers("AOC2021/Day08/Input.txt"));
 
         #endregion
     }

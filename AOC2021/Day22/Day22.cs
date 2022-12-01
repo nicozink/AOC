@@ -181,22 +181,22 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(39, CountCubes("Day22/Example1.txt", initialiseOnly: true));
+        public void SolveExample1() => Assert.AreEqual(39, CountCubes("AOC2021/Day22/Example1.txt", initialiseOnly: true));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(590784, CountCubes("Day22/Example2.txt", initialiseOnly: true));
+        public void SolveExample2() => Assert.AreEqual(590784, CountCubes("AOC2021/Day22/Example2.txt", initialiseOnly: true));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(602574, CountCubes("Day22/Input.txt", initialiseOnly: true));
+        public void SolvePart1() => Assert.AreEqual(602574, CountCubes("AOC2021/Day22/Input.txt", initialiseOnly: true));
 
         [TestMethod]
-        public void SolveExample3() => Assert.AreEqual(474140, CountCubes("Day22/Example3.txt", initialiseOnly: true));
+        public void SolveExample3() => Assert.AreEqual(474140, CountCubes("AOC2021/Day22/Example3.txt", initialiseOnly: true));
 
         [TestMethod]
-        public void SolveExample4() => Assert.AreEqual(2758514936282235, CountCubes("Day22/Example3.txt", initialiseOnly: false));
+        public void SolveExample4() => Assert.AreEqual(2758514936282235, CountCubes("AOC2021/Day22/Example3.txt", initialiseOnly: false));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(1288707160324706, CountCubes("Day22/Input.txt", initialiseOnly: false));
+        public void SolvePart2() => Assert.AreEqual(1288707160324706, CountCubes("AOC2021/Day22/Input.txt", initialiseOnly: false));
 
         #endregion
     }

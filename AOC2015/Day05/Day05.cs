@@ -145,7 +145,7 @@ namespace AOC2015
         }
 
         [TestMethod]
-        public void TestSolution1() => Assert.AreEqual(238, CountNice1("Day05/Input.txt"));
+        public void TestSolution1() => Assert.AreEqual(238, CountNice1("AOC2015/Day05/Input.txt"));
 
         [TestMethod]
         public void TestExample2()
@@ -166,7 +166,7 @@ namespace AOC2015
         }
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual(69, CountNice2("Day05/Input.txt"));
+        public void TestSolution2() => Assert.AreEqual(69, CountNice2("AOC2015/Day05/Input.txt"));
 
         #endregion
     }

@@ -114,16 +114,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(198, GetPowerConsumption("Day03/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(198, GetPowerConsumption("AOC2021/Day03/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(3374136, GetPowerConsumption("Day03/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(3374136, GetPowerConsumption("AOC2021/Day03/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(230, GetCO2Scrubbing("Day03/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(230, GetCO2Scrubbing("AOC2021/Day03/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(4432698, GetCO2Scrubbing("Day03/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(4432698, GetCO2Scrubbing("AOC2021/Day03/Input.txt"));
 
         #endregion
     }

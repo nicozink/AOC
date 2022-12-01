@@ -237,7 +237,7 @@ namespace AOC2020
         }
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(1890866893020, GetSolution1("Day18/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(1890866893020, GetSolution1("AOC2020/Day18/Input.txt"));
 
         [TestMethod]
         public void SolveExample2()
@@ -253,7 +253,7 @@ namespace AOC2020
         }
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(34646237037193, GetSolution2("Day18/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(34646237037193, GetSolution2("AOC2020/Day18/Input.txt"));
 
         #endregion
     }

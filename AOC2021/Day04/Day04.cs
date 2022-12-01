@@ -225,16 +225,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(4512, GetWinningScore("Day04/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(4512, GetWinningScore("AOC2021/Day04/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(33462, GetWinningScore("Day04/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(33462, GetWinningScore("AOC2021/Day04/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(1924, GetLastWinningScore("Day04/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(1924, GetLastWinningScore("AOC2021/Day04/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(30070, GetLastWinningScore("Day04/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(30070, GetLastWinningScore("AOC2021/Day04/Input.txt"));
 
         #endregion
     }

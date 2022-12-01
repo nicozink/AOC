@@ -129,10 +129,10 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual("53999995829399", FindNumbers("Day24/Input.txt").Last());
+        public void SolvePart1() => Assert.AreEqual("53999995829399", FindNumbers("AOC2021/Day24/Input.txt").Last());
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual("11721151118175", FindNumbers("Day24/Input.txt").First());
+        public void SolvePart2() => Assert.AreEqual("11721151118175", FindNumbers("AOC2021/Day24/Input.txt").First());
 
         #endregion
     }

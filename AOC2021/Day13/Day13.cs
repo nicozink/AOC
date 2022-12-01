@@ -176,13 +176,13 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(17, CountAfterFirstFold("Day13/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(17, CountAfterFirstFold("AOC2021/Day13/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(731, CountAfterFirstFold("Day13/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(731, CountAfterFirstFold("AOC2021/Day13/Input.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Console.WriteLine(GetFoldedPaper("Day13/Input.txt"));
+        public void SolvePart2() => Console.WriteLine(GetFoldedPaper("AOC2021/Day13/Input.txt"));
 
         #endregion
     }

@@ -160,10 +160,10 @@ namespace AOC2015
         #region Solve Problems
 
         [TestMethod]
-        public void TestSolution1() => Assert.AreEqual(400410, CountLights("Day06/Input.txt", elvish: false));
+        public void TestSolution1() => Assert.AreEqual(400410, CountLights("AOC2015/Day06/Input.txt", elvish: false));
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual(15343601, CountLights("Day06/Input.txt", elvish: true));
+        public void TestSolution2() => Assert.AreEqual(15343601, CountLights("AOC2015/Day06/Input.txt", elvish: true));
 
         #endregion
     }

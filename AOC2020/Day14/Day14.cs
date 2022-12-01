@@ -153,16 +153,16 @@ namespace AOC2020
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(165, ExecuteBitmaskProgram("Day14/Example1.txt", 1));
+        public void SolveExample1() => Assert.AreEqual(165, ExecuteBitmaskProgram("AOC2020/Day14/Example1.txt", 1));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(4297467072083, ExecuteBitmaskProgram("Day14/Input.txt", 1));
+        public void SolvePart1() => Assert.AreEqual(4297467072083, ExecuteBitmaskProgram("AOC2020/Day14/Input.txt", 1));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(208, ExecuteBitmaskProgram("Day14/Example2.txt", 2));
+        public void SolveExample2() => Assert.AreEqual(208, ExecuteBitmaskProgram("AOC2020/Day14/Example2.txt", 2));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(5030603328768, ExecuteBitmaskProgram("Day14/Input.txt", 2));
+        public void SolvePart2() => Assert.AreEqual(5030603328768, ExecuteBitmaskProgram("AOC2020/Day14/Input.txt", 2));
 
         #endregion
     }

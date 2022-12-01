@@ -64,16 +64,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(37, CountMinimumFuel("Day07/Example.txt", linear: true));
+        public void SolveExample1() => Assert.AreEqual(37, CountMinimumFuel("AOC2021/Day07/Example.txt", linear: true));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(337833, CountMinimumFuel("Day07/Input.txt", linear: true));
+        public void SolvePart1() => Assert.AreEqual(337833, CountMinimumFuel("AOC2021/Day07/Input.txt", linear: true));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(168, CountMinimumFuel("Day07/Example.txt", linear: false));
+        public void SolveExample2() => Assert.AreEqual(168, CountMinimumFuel("AOC2021/Day07/Example.txt", linear: false));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(96678050, CountMinimumFuel("Day07/Input.txt", linear: false));
+        public void SolvePart2() => Assert.AreEqual(96678050, CountMinimumFuel("AOC2021/Day07/Input.txt", linear: false));
 
         #endregion
     }

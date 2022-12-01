@@ -223,16 +223,16 @@ namespace AOC2020
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(10, GetSolution1("Day24/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(10, GetSolution1("AOC2020/Day24/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(538, GetSolution1("Day24/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(538, GetSolution1("AOC2020/Day24/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(2208, GetSolution2("Day24/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(2208, GetSolution2("AOC2020/Day24/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(4259, GetSolution2("Day24/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(4259, GetSolution2("AOC2020/Day24/Input.txt"));
 
         #endregion
     }

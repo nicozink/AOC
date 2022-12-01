@@ -86,16 +86,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(7, CountSingleIncreased("Day01/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(7, CountSingleIncreased("AOC2021/Day01/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(1583, CountSingleIncreased("Day01/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(1583, CountSingleIncreased("AOC2021/Day01/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(5, CountTripleIncreased("Day01/Example.txt"));
+        public void SolveExample2() => Assert.AreEqual(5, CountTripleIncreased("AOC2021/Day01/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(1627, CountTripleIncreased("Day01/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(1627, CountTripleIncreased("AOC2021/Day01/Input.txt"));
 
         #endregion
     }

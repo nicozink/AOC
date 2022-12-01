@@ -390,16 +390,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(12521, FindLeastEnergy("Day23/Example1.txt"));
+        public void SolveExample1() => Assert.AreEqual(12521, FindLeastEnergy("AOC2021/Day23/Example1.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(15109, FindLeastEnergy("Day23/Input1.txt"));
+        public void SolvePart1() => Assert.AreEqual(15109, FindLeastEnergy("AOC2021/Day23/Input1.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(44169, FindLeastEnergy("Day23/Example2.txt"));
+        public void SolveExample2() => Assert.AreEqual(44169, FindLeastEnergy("AOC2021/Day23/Example2.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(53751, FindLeastEnergy("Day23/Input2.txt"));
+        public void SolvePart2() => Assert.AreEqual(53751, FindLeastEnergy("AOC2021/Day23/Input2.txt"));
 
         #endregion
     }

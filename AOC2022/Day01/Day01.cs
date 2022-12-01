@@ -56,16 +56,16 @@ namespace AOC2022
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(24000, GetLargetsTotalCalories("Day01/Example.txt"));
+        public void SolveExample1() => Assert.AreEqual(24000, GetLargetsTotalCalories("AOC2022/Day01/Example.txt"));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(71471, GetLargetsTotalCalories("Day01/Input.txt"));
+        public void SolvePart1() => Assert.AreEqual(71471, GetLargetsTotalCalories("AOC2022/Day01/Input.txt"));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(45000, GetLargetsTotalCalories("Day01/Example.txt", 3));
+        public void SolveExample2() => Assert.AreEqual(45000, GetLargetsTotalCalories("AOC2022/Day01/Example.txt", 3));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(211189, GetLargetsTotalCalories("Day01/Input.txt", 3));
+        public void SolvePart2() => Assert.AreEqual(211189, GetLargetsTotalCalories("AOC2022/Day01/Input.txt", 3));
 
         #endregion
     }

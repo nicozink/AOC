@@ -110,7 +110,7 @@ namespace AOC2015
         }
 
         [TestMethod]
-        public void TestSolution1() => Assert.AreEqual(2081, SolveSantaHouses("Day03/Input.txt"));
+        public void TestSolution1() => Assert.AreEqual(2081, SolveSantaHouses("AOC2015/Day03/Input.txt"));
 
         [TestMethod]
         public void TestExample2()
@@ -121,7 +121,7 @@ namespace AOC2015
         }
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual(2341, SolveSantaAndRobotHouses("Day03/Input.txt"));
+        public void TestSolution2() => Assert.AreEqual(2341, SolveSantaAndRobotHouses("AOC2015/Day03/Input.txt"));
 
         #endregion
     }

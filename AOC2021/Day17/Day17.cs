@@ -140,16 +140,16 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(45, FindHighestTrajectory("Day17/Example.txt").highest);
+        public void SolveExample1() => Assert.AreEqual(45, FindHighestTrajectory("AOC2021/Day17/Example.txt").highest);
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(15931, FindHighestTrajectory("Day17/Input.txt").highest);
+        public void SolvePart1() => Assert.AreEqual(15931, FindHighestTrajectory("AOC2021/Day17/Input.txt").highest);
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(112, FindHighestTrajectory("Day17/Example.txt").count);
+        public void SolveExample2() => Assert.AreEqual(112, FindHighestTrajectory("AOC2021/Day17/Example.txt").count);
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(2555, FindHighestTrajectory("Day17/Input.txt").count);
+        public void SolvePart2() => Assert.AreEqual(2555, FindHighestTrajectory("AOC2021/Day17/Input.txt").count);
 
         #endregion
     }

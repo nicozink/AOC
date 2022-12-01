@@ -62,7 +62,7 @@ namespace AOC2020
         /// <returns>The maximum seat ID.</returns>
         public int GetMaximumSeatID()
         {
-            var input = System.IO.File.ReadLines("Day05/Input.txt");
+            var input = System.IO.File.ReadLines("AOC2020/Day05/Input.txt");
 
             return input.Max(x => GetSeatID(x));
         }
@@ -79,7 +79,7 @@ namespace AOC2020
             int minSeatID = GetSeatID("FFFFFFFLLL");
             int maxSeatID = GetSeatID("BBBBBBBRRR");
 
-            var boardingPasses = System.IO.File.ReadLines("Day05/Input.txt")
+            var boardingPasses = System.IO.File.ReadLines("AOC2020/Day05/Input.txt")
                 .ToDictionary(x => GetSeatID(x));
 
             for (int i = minSeatID; i <= maxSeatID; ++i)

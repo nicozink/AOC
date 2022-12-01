@@ -231,7 +231,7 @@ namespace AOC2021
         [TestMethod]
         public void SolvePart1()
         {
-            string line = System.IO.File.ReadAllText("Day16/Input.txt");
+            string line = System.IO.File.ReadAllText("AOC2021/Day16/Input.txt");
             Assert.AreEqual(949, CountVersionNumbers(line));
         }
 
@@ -262,7 +262,7 @@ namespace AOC2021
         [TestMethod]
         public void SolvePart2()
         {
-            string line = System.IO.File.ReadAllText("Day16/Input.txt");
+            string line = System.IO.File.ReadAllText("AOC2021/Day16/Input.txt");
             Assert.AreEqual(1114600142730, DecodeBitPattern(line));
         }
 

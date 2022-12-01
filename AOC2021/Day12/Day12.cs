@@ -128,28 +128,28 @@ namespace AOC2021
         #region Solve Problems
 
         [TestMethod]
-        public void SolveExample1() => Assert.AreEqual(10, CountPossiblePaths("Day12/Example1.txt", allowMultiVisit: false));
+        public void SolveExample1() => Assert.AreEqual(10, CountPossiblePaths("AOC2021/Day12/Example1.txt", allowMultiVisit: false));
 
         [TestMethod]
-        public void SolveExample2() => Assert.AreEqual(19, CountPossiblePaths("Day12/Example2.txt", allowMultiVisit: false));
+        public void SolveExample2() => Assert.AreEqual(19, CountPossiblePaths("AOC2021/Day12/Example2.txt", allowMultiVisit: false));
 
         [TestMethod]
-        public void SolveExample3() => Assert.AreEqual(226, CountPossiblePaths("Day12/Example3.txt", allowMultiVisit: false));
+        public void SolveExample3() => Assert.AreEqual(226, CountPossiblePaths("AOC2021/Day12/Example3.txt", allowMultiVisit: false));
 
         [TestMethod]
-        public void SolvePart1() => Assert.AreEqual(3463, CountPossiblePaths("Day12/Input.txt", allowMultiVisit: false));
+        public void SolvePart1() => Assert.AreEqual(3463, CountPossiblePaths("AOC2021/Day12/Input.txt", allowMultiVisit: false));
 
         [TestMethod]
-        public void SolveExample4() => Assert.AreEqual(36, CountPossiblePaths("Day12/Example1.txt", allowMultiVisit: true));
+        public void SolveExample4() => Assert.AreEqual(36, CountPossiblePaths("AOC2021/Day12/Example1.txt", allowMultiVisit: true));
 
         [TestMethod]
-        public void SolveExample5() => Assert.AreEqual(103, CountPossiblePaths("Day12/Example2.txt", allowMultiVisit: true));
+        public void SolveExample5() => Assert.AreEqual(103, CountPossiblePaths("AOC2021/Day12/Example2.txt", allowMultiVisit: true));
 
         [TestMethod]
-        public void SolveExample6() => Assert.AreEqual(3509, CountPossiblePaths("Day12/Example3.txt", allowMultiVisit: true));
+        public void SolveExample6() => Assert.AreEqual(3509, CountPossiblePaths("AOC2021/Day12/Example3.txt", allowMultiVisit: true));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(91533, CountPossiblePaths("Day12/Input.txt", allowMultiVisit: true));
+        public void SolvePart2() => Assert.AreEqual(91533, CountPossiblePaths("AOC2021/Day12/Input.txt", allowMultiVisit: true));
 
         #endregion
     }

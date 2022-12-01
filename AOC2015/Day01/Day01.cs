@@ -64,10 +64,10 @@ namespace AOC2015
         #region Solve Problems
 
         [TestMethod]
-        public void TestSolution1() => Assert.AreEqual(74, GetFloor("Day01/Input.txt"));
+        public void TestSolution1() => Assert.AreEqual(74, GetFloor("AOC2015/Day01/Input.txt"));
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual(1795, GetBasementInstruction("Day01/Input.txt"));
+        public void TestSolution2() => Assert.AreEqual(1795, GetBasementInstruction("AOC2015/Day01/Input.txt"));
 
         #endregion
     }

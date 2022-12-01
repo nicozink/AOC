@@ -170,16 +170,16 @@ namespace AOC2015
         #region Solve Problems
 
         [TestMethod]
-        public void TestExample1() => Assert.AreEqual(605, GetShortestPath("Day09/Example.txt"));
+        public void TestExample1() => Assert.AreEqual(605, GetShortestPath("AOC2015/Day09/Example.txt"));
 
         [TestMethod]
-        public void TestSolution1() => Assert.AreEqual(141, GetShortestPath("Day09/Input.txt"));
+        public void TestSolution1() => Assert.AreEqual(141, GetShortestPath("AOC2015/Day09/Input.txt"));
 
         [TestMethod]
-        public void TestExample2() => Assert.AreEqual(982, GetLongestPath("Day09/Example.txt"));
+        public void TestExample2() => Assert.AreEqual(982, GetLongestPath("AOC2015/Day09/Example.txt"));
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual(736, GetLongestPath("Day09/Input.txt"));
+        public void TestSolution2() => Assert.AreEqual(736, GetLongestPath("AOC2015/Day09/Input.txt"));
 
         #endregion
     }
