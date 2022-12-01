@@ -21,7 +21,7 @@ namespace AOC2021
         /// <param name="index">The index to search.</param>
         /// <param name="mostCommon">Whether to seach for the most common character.</param>
         /// <returns>The most/least common character.</returns>
-        char GetCommonChar(string[] lines, int index, bool mostCommon)
+        static char GetCommonChar(string[] lines, int index, bool mostCommon)
         {
             var lineSearch = from ch in lines.Select(x => x[index])
                              group ch by ch into grp
@@ -45,7 +45,7 @@ namespace AOC2021
         /// <param name="lines">The list of strings.</param>
         /// <param name="mostCommon">Whether to look for the most or least common.</param>
         /// <returns>A string consisting of the most/least common characters.</returns>
-        String BuildRateString(string[] lines, bool mostCommon)
+        static String BuildRateString(string[] lines, bool mostCommon)
         {
             var enumerateColumns = Enumerable.Range(0, lines[0].Length);
             var gamma = enumerateColumns.Select(x => GetCommonChar(lines, x, mostCommon));
@@ -58,7 +58,7 @@ namespace AOC2021
         /// </summary>
         /// <param name="path">The file containing the list of strings.</param>
         /// <returns>The power consumption.</returns>
-        private int GetPowerConsumption(String path)
+        private static int GetPowerConsumption(String path)
         {
             var lines = System.IO.File.ReadAllLines(path).ToArray();
 
@@ -76,7 +76,7 @@ namespace AOC2021
         /// <param name="mostCommon">Whether to look for the most or least common characters.</param>
         /// <returns>The best match string.</returns>
         /// <exception cref="InvalidOperationException">Thrown when not able to find a single match.</exception>
-        private String FindRatingValue(string[] lines, bool mostCommon)
+        private static String FindRatingValue(string[] lines, bool mostCommon)
         {
             var remainingLines = lines.ToArray();
             for (int i = 0; i < lines[0].Length; ++i)
@@ -101,7 +101,7 @@ namespace AOC2021
         /// </summary>
         /// <param name="path">A file containing the list of strings.</param>
         /// <returns>The CO2 scrubbing value.</returns>
-        private int GetCO2Scrubbing(String path)
+        private static int GetCO2Scrubbing(String path)
         {
             var lines = System.IO.File.ReadAllLines(path).ToArray();
 

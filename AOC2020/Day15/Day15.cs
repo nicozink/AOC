@@ -19,7 +19,7 @@ namespace AOC2020
         /// <param name="starting">The starting numbers.</param>
         /// <param name="n">The turn n.</param>
         /// <returns>The nth number.</returns>
-        public int GetNthNumber(List<int> starting, int n)
+        public static int GetNthNumber(List<int> starting, int n)
         {
             // We process the starting numbers by putting them in a dictionary
             // that stores the last turn. We exclude the last number, since that
@@ -29,7 +29,7 @@ namespace AOC2020
                 .ToDictionary(tuple => tuple.Item1, tuple => tuple.Item2);
 
             var lastNumber = starting.Last();
-            var lastTurn = starting.Count();
+            var lastTurn = starting.Count;
 
             while (true)
             {
