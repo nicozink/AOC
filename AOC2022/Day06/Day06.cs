@@ -15,7 +15,7 @@ namespace AOC2022
     {
         /// <summary>
         /// Gets the position of the first sequence of unique characters
-        /// of a given lenght. Returns marker position which is the first
+        /// of a given length. Returns marker position which is the first
         /// index after the first sequence.
         /// </summary>
         /// <param name="input">The input message.</param>
