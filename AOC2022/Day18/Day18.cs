@@ -121,7 +121,7 @@ namespace AOC2022
         public void SolveExample2() => Assert.AreEqual(58, GetSolution("AOC2022/Day18/Example.txt", true));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(0, GetSolution("AOC2022/Day18/Input.txt", true));
+        public void SolvePart2() => Assert.AreEqual(2444, GetSolution("AOC2022/Day18/Input.txt", true));
 
         #endregion
     }
