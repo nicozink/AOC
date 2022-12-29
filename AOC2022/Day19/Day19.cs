@@ -237,11 +237,8 @@ namespace AOC2022
 
             bool canMakeMoves = false;
 
-            var robots = state.Robots;
             for (int i = 0; i < blueprint.RobotCosts.Length; i++)
             {
-                var rule = blueprint.RobotCosts[i];
-
                 if (TryBuildRobot(state, blueprint, i, out var newState))
                 {
                     canMakeMoves = true;
