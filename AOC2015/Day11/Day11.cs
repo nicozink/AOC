@@ -128,7 +128,7 @@ namespace AOC2015
         public void TestSolution1() => Assert.AreEqual("vzbxxyzz", GetNextPassword("vzbxkghb"));
 
         [TestMethod]
-        public void TestSolution2() => Assert.AreEqual("vzbxxyzz", GetNextPassword("vzbxxyzz"));
+        public void TestSolution2() => Assert.AreEqual("vzcaabcc", GetNextPassword("vzbxxyzz"));
 
         #endregion
     }
