@@ -14,7 +14,7 @@ namespace AOC2015
     [TestClass]
     public class Day11
     {
-        private bool IsCondition1Valid(StringBuilder password)
+        private static bool IsCondition1Valid(StringBuilder password)
         {
             for (int x = 0; x < password.Length - 3; x++)
             {
@@ -31,7 +31,7 @@ namespace AOC2015
             return false;
         }
 
-        private bool IsCondition2Valid(StringBuilder password)
+        private static bool IsCondition2Valid(StringBuilder password)
         {
             for (int x = 0; x < password.Length; x++)
             {
@@ -48,7 +48,7 @@ namespace AOC2015
             return true;
         }
 
-        private bool IsCondition3Valid(StringBuilder password)
+        private static bool IsCondition3Valid(StringBuilder password)
         {
             int numPairs = 0;
             for (int x = 0; x < password.Length - 1; x++)
