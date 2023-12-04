@@ -151,7 +151,7 @@ namespace AOC2023
         public void SolveExample2() => Assert.AreEqual(2286, CalculateCubePower("AOC2023/Day02/Example.txt"));
 
         [TestMethod]
-        public void SolvePart2() => Assert.AreEqual(0, CalculateCubePower("AOC2023/Day02/Input.txt"));
+        public void SolvePart2() => Assert.AreEqual(70950, CalculateCubePower("AOC2023/Day02/Input.txt"));
 
         #endregion
     }
