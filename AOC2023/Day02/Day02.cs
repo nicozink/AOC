@@ -71,7 +71,7 @@ namespace AOC2023
             }
         }
 
-        private int SumPossibleGames(string path)
+        private static int SumPossibleGames(string path)
         {
             var games = ReadInput(path);
 
@@ -104,7 +104,7 @@ namespace AOC2023
             return sum;
         }
 
-        private int CalculateCubePower(string path)
+        private static int CalculateCubePower(string path)
         {
             var games = ReadInput(path);
 

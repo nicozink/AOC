@@ -55,7 +55,7 @@ namespace AOC2023
         /// </summary>
         /// <param name="scratchCard">The scratch card.</param>
         /// <returns>The number of winning numbers.</returns>
-        private int CalculateWinningNumbers(ScratchCard scratchCard)
+        private static int CalculateWinningNumbers(ScratchCard scratchCard)
         {
             var numbers1 = scratchCard.Number1.ToHashSet();
             var numbers2 = scratchCard.Number2.ToHashSet();
@@ -70,7 +70,7 @@ namespace AOC2023
         /// </summary>
         /// <param name="path">The path to the input file.</param>
         /// <returns>The sum of points.</returns>
-        private int CalculatePoints(string path)
+        private static int CalculatePoints(string path)
         {
             var scratchCards = ReadInput(path);
 
