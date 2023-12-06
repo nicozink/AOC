@@ -114,7 +114,7 @@ namespace AOC2023
         /// </summary>
         /// <param name="path">The path to the input file.</param>
         /// <returns>The sum of part numbers.</returns>
-        private int SumPartNumbers(string path)
+        private static int SumPartNumbers(string path)
         {
             var partNumbers = ReadInput(path);
             return partNumbers
@@ -128,7 +128,7 @@ namespace AOC2023
         /// </summary>
         /// <param name="path">The path to the input file.</param>
         /// <returns>The sum of gear ratios.</returns>
-        private int SumGearRatios(string path)
+        private static int SumGearRatios(string path)
         {
             int sum = 0;
             var partNumbers = ReadInput(path);

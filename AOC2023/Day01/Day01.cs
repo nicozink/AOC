@@ -12,7 +12,7 @@ namespace AOC2023
     [TestClass]
     public class Day01
     {
-        List<(string number, int value)> numbers = new List<(string number, int value)> {
+        readonly List<(string number, int value)> numbers = new() {
             ("one", 1),
             ("two", 2),
             ("three", 3),
