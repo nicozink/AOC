@@ -19,7 +19,7 @@ namespace AOC2020
         /// </summary>
         /// <param name="searchString">The string describing the position.</param>
         /// <returns>The position.</returns>
-        public int GetPositionFromString(String searchString)
+        public static int GetPositionFromString(String searchString)
         {
             var binaryString = searchString
                 .Replace('F', '0')
@@ -35,9 +35,9 @@ namespace AOC2020
         /// </summary>
         /// <param name="seat">The string describing the position.</param>
         /// <returns>The seat position giving row/column.</returns>
-        public Tuple<int, int> GetSeatPosition(String seat)
+        public static Tuple<int, int> GetSeatPosition(String seat)
         {
-            int row = GetPositionFromString(seat.Substring(0, 7));
+            int row = GetPositionFromString(seat[..7]);
             int column = GetPositionFromString(seat.Substring(7, 3));
 
             return new Tuple<int, int>(row, column);
@@ -49,7 +49,7 @@ namespace AOC2020
         /// </summary>
         /// <param name="seat">The string describing the seat position.</param>
         /// <returns>The seat id.</returns>
-        public int GetSeatID(String seat)
+        public static int GetSeatID(String seat)
         {
             var seatPosition = GetSeatPosition(seat);
 
@@ -60,7 +60,7 @@ namespace AOC2020
         /// Gets the maximum seat ID from the given input.
         /// </summary>
         /// <returns>The maximum seat ID.</returns>
-        public int GetMaximumSeatID()
+        public static int GetMaximumSeatID()
         {
             var input = System.IO.File.ReadLines("AOC2020/Day05/Input.txt");
 
@@ -74,7 +74,7 @@ namespace AOC2020
         /// other seats.
         /// </summary>
         /// <returns>The missing seat id.</returns>
-        public long GetMissingSeat()
+        public static long GetMissingSeat()
         {
             int minSeatID = GetSeatID("FFFFFFFLLL");
             int maxSeatID = GetSeatID("BBBBBBBRRR");

@@ -12,21 +12,21 @@ namespace AOC2020
     [TestClass]
     public class Day04
     {
-        public int GetSolution1(String path)
+        public static int GetSolution1(String path)
         {
             var passports = ReadPassports(path);
 
             return passports.Count(x => IsPassportComplete(x));
         }
 
-        public long GetSolution2(String path)
+        public static long GetSolution2(String path)
         {
             var passports = ReadPassports(path);
 
             return passports.Count(x => IsPassportValid(x));
         }
 
-        IEnumerable<Dictionary<String, String>> ReadPassports(String path)
+        static IEnumerable<Dictionary<String, String>> ReadPassports(String path)
         {
             var input = System.IO.File.ReadLines(path);
 
@@ -55,7 +55,7 @@ namespace AOC2020
             }    
         }
 
-        bool IsPassportComplete(Dictionary<String, String> passport)
+        static bool IsPassportComplete(Dictionary<String, String> passport)
         {
             String[] requiredFields = {
                 "byr",
@@ -78,7 +78,7 @@ namespace AOC2020
             return true;
         }
 
-        bool IsPassportValid(Dictionary<String, String> passport)
+        static bool IsPassportValid(Dictionary<String, String> passport)
         {
             if (!IsPassportComplete(passport))
             {
@@ -135,8 +135,8 @@ namespace AOC2020
                 return false;
             }
 
-            var hairCode = hcl.Substring(1);
-            if (hairCode.Length != 6 || hairCode.Count(x => !((x >= '0' && x <= '9') || (x >= 'a' && x <= 'f'))) > 0)
+            var hairCode = hcl[1..];
+            if (hairCode.Length != 6 || hairCode.Any(x => !((x >= '0' && x <= '9') || (x >= 'a' && x <= 'f'))))
             {
                 return false;
             }
@@ -155,7 +155,7 @@ namespace AOC2020
                 return false;
             }
 
-            if (pid.Count(x => x < '0' || x > '9') > 0)
+            if (pid.Any(x => x < '0' || x > '9'))
             {
                 return false;
             }

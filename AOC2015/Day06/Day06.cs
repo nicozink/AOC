@@ -37,20 +37,20 @@ namespace AOC2015
         /// <param name="cmd">The command.</param>
         /// <param name="From">The rectangle min bounds.</param>
         /// <param name="To">The rectangle max bounds.</param>
-        record Instruction(Command cmd, Point From, Point To);
+        record Instruction(Command Cmd, Point From, Point To);
 
         /// <summary>
         /// Gets a command from a string.
         /// </summary>
         /// <param name="line">The string.</param>
         /// <returns>The command.</returns>
-        Command GetCommand(string line)
+        static Command GetCommand(string line)
         {
-            if (line.Substring(0, 6) == "toggle")
+            if (line[..6] == "toggle")
             {
                 return Command.Toggle;
             }
-            else if (line.Substring(0, 7) == "turn on")
+            else if (line[..7] == "turn on")
             {
                 return Command.On;
             }
@@ -65,7 +65,7 @@ namespace AOC2015
         /// </summary>
         /// <param name="path">The path to the input file.</param>
         /// <returns>The commands.</returns>
-        IEnumerable<Instruction> ReadInput(string path)
+        static IEnumerable<Instruction> ReadInput(string path)
         {
             var lines = System.IO.File.ReadLines(path);
 
@@ -94,7 +94,7 @@ namespace AOC2015
         /// <param name="from">The min bounds.</param>
         /// <param name="to">The max bounds.</param>
         /// <returns>The points.</returns>
-        IEnumerable<Point> GetPoints(Point from, Point to)
+        static IEnumerable<Point> GetPoints(Point from, Point to)
         {
             for (int x = from.X; x <= to.X; x++)
             {
@@ -112,7 +112,7 @@ namespace AOC2015
         /// <param name="path">The path to the commands.</param>
         /// <param name="elvish">Whether to interpret the commands as elvish.</param>
         /// <returns>The number of lights/brightness.</returns>
-        int CountLights(string path, bool elvish)
+        static int CountLights(string path, bool elvish)
         {
             int[,] lights = new int[1000, 1000];
 
@@ -123,19 +123,19 @@ namespace AOC2015
                 {
                     ref int value = ref lights[point.X, point.Y];
 
-                    if (cmd.cmd == Command.On && (elvish || value == 0))
+                    if (cmd.Cmd == Command.On && (elvish || value == 0))
                     {
                         value++;
                     }
-                    else if (cmd.cmd == Command.Off && value > 0)
+                    else if (cmd.Cmd == Command.Off && value > 0)
                     {
                         value--;
                     }
-                    else if (cmd.cmd == Command.Toggle && elvish)
+                    else if (cmd.Cmd == Command.Toggle && elvish)
                     {
                         value += 2;
                     }
-                    else if (cmd.cmd == Command.Toggle && !elvish)
+                    else if (cmd.Cmd == Command.Toggle && !elvish)
                     {
                         value = value == 0 ? 1 : 0;
                     }

@@ -18,7 +18,7 @@ namespace AOC2015
         /// </summary>
         /// <param name="str">The string.</param>
         /// <returns>True if the string is nice.</returns>
-        public bool IsNice1(String str)
+        public static bool IsNice1(String str)
         {
             // Check for the required number of vowels
 
@@ -57,7 +57,7 @@ namespace AOC2015
         /// </summary>
         /// <param name="path">The input file path.</param>
         /// <returns>The number of nice strings.</returns>
-        public int CountNice1(string path) => System.IO.File.ReadLines(path).Count(IsNice1);
+        public static int CountNice1(string path) => System.IO.File.ReadLines(path).Count(IsNice1);
 
         /// <summary>
         /// Checks wheter a string has a sequence of two letters that is
@@ -65,7 +65,7 @@ namespace AOC2015
         /// </summary>
         /// <param name="str">The string.</param>
         /// <returns>True if it contains the pattern.</returns>
-        public bool HasPattern1(String str)
+        public static bool HasPattern1(String str)
         {
             bool foundPattern1 = false;
 
@@ -73,7 +73,7 @@ namespace AOC2015
             {
                 String combo = str.Substring(x, 2);
 
-                if (str.Substring(x + 2).Contains(combo))
+                if (str[(x + 2)..].Contains(combo))
                 {
                     foundPattern1 = true;
                     break;
@@ -89,7 +89,7 @@ namespace AOC2015
         /// </summary>
         /// <param name="str">The string.</param>
         /// <returns>True if it matches the pattern.</returns>
-        public bool HasPattern2(String str)
+        public static bool HasPattern2(String str)
         {
             bool foundPattern2 = false;
 
@@ -110,7 +110,7 @@ namespace AOC2015
         /// </summary>
         /// <param name="str">The string.</param>
         /// <returns>True if the string is nice.</returns>
-        public bool IsNice2(String str)
+        public static bool IsNice2(String str)
         {
             if (!HasPattern1(str))
             {
@@ -130,7 +130,7 @@ namespace AOC2015
         /// </summary>
         /// <param name="path">The path to the input file.</param>
         /// <returns>The number of nice strings.</returns>
-        public int CountNice2(string path) => System.IO.File.ReadLines(path).Count(IsNice2);
+        public static int CountNice2(string path) => System.IO.File.ReadLines(path).Count(IsNice2);
 
         #region Solve Problems
 

@@ -37,14 +37,14 @@ namespace AOC2020
         /// </summary>
         /// <param name="path">The path to the movement commands.</param>
         /// <returns>The movement commands.</returns>
-        IEnumerable<ShipCommand> GetShipCommands(String path)
+        static IEnumerable<ShipCommand> GetShipCommands(String path)
         {
             var input = System.IO.File.ReadLines(path);
 
             foreach (var line in input)
             {
                 char action = line[0];
-                int value = int.Parse(line.Substring(1));
+                int value = int.Parse(line[1..]);
 
                 yield return new ShipCommand()
                 {
@@ -61,7 +61,7 @@ namespace AOC2020
         /// <param name="direction">The direction.</param>
         /// <param name="value">The distance to move.</param>
         /// <returns>The new position.</returns>
-        Tuple<int, int> Move(Tuple<int, int> position, Tuple<int, int> direction, int value)
+        static Tuple<int, int> Move(Tuple<int, int> position, Tuple<int, int> direction, int value)
         {
             var positionX = position.Item1;
             var positionY = position.Item2;
@@ -75,7 +75,7 @@ namespace AOC2020
         /// <summary>
         /// Stores a mapping between movement codes, and direction.
         /// </summary>
-        Dictionary<char, Tuple<int, int>> commandDirection = new Dictionary<char, Tuple<int, int>>()
+        readonly Dictionary<char, Tuple<int, int>> commandDirection = new ()
         {
             { 'N', new Tuple<int, int>(0, 1) },
             { 'S', new Tuple<int, int>(0, -1) },
@@ -101,7 +101,7 @@ namespace AOC2020
         /// <param name="direction">The direction.</param>
         /// <param name="command">The command.</param>
         /// <returns>The new direction.</returns>
-        Tuple<int, int> Rotate(Tuple<int, int> direction, ShipCommand command)
+        static Tuple<int, int> Rotate(Tuple<int, int> direction, ShipCommand command)
         {
             int degreeRotation = command.Value;
 

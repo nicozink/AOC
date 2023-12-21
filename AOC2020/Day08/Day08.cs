@@ -139,12 +139,12 @@ namespace AOC2020
         /// <summary>
         /// Stores the history, which is a list of positions that have been executed.
         /// </summary>
-        private List<int> history = new List<int>();
+        private readonly List<int> history = new ();
 
         /// <summary>
         /// The actual program, represented as a list of instructions.
         /// </summary>
-        private List<Instruction> program;
+        private readonly List<Instruction> program;
     }
 
     /// <summary>
@@ -155,13 +155,13 @@ namespace AOC2020
     public class Day08
     {
         
-        public int GetSolution1(String path)
+        public static int GetSolution1(String path)
         {
             var program = new Interpreter(path);
             return program.RunUntilRepeats();
         }
 
-		public int GetSolution2(String path)
+		public static int GetSolution2(String path)
         {
             var program = new Interpreter(path);
             return program.FixAndRun();

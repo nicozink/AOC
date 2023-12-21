@@ -20,7 +20,7 @@ namespace AOC2020
         /// </summary>
         /// <param name="path">The input file.</param>
         /// <returns>The bag rules.</returns>
-        Dictionary<String, BagRules> ReadBagRules(String path)
+        static Dictionary<String, BagRules> ReadBagRules(String path)
         {
             var rules = new Dictionary<String, BagRules>();
 
@@ -38,8 +38,8 @@ namespace AOC2020
 
                 foreach (var singleRule in ruleDefinition[1].Split(','))
                 {
-                    var singleRuleName = singleRule.Substring(2);
-                    var singleRuleValue = Int32.Parse(singleRule.Substring(0, 1));
+                    var singleRuleName = singleRule[2..];
+                    var singleRuleValue = Int32.Parse(singleRule[..1]);
 
                     ruleContents.Add(new Tuple<string, int>(singleRuleName, singleRuleValue));
                 }
@@ -60,11 +60,11 @@ namespace AOC2020
         /// <returns>The bag names.</returns>
         private HashSet<String> GetValidBagsFor(Dictionary<string, BagRules> rules, string bagName)
         {
-            HashSet<String> validStrings = new HashSet<string>();
+            HashSet<String> validStrings = new ();
 
             foreach (var keyValuePair in rules)
             {
-                if (keyValuePair.Value.Count(x => x.Item1 == bagName) != 0)
+                if (keyValuePair.Value.Any(x => x.Item1 == bagName))
                 {
                     validStrings.Add(keyValuePair.Key);
                 }

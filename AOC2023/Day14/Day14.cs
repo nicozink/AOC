@@ -23,7 +23,7 @@ namespace AOC2023
         /// <summary>
         /// The directions in which the rocks can move, in the order that tilts happen.
         /// </summary>
-        private static List<Direction> directions = new()
+        private static readonly List<Direction> directions = new()
         {
             new(-1, 0),
             new(0, -1),

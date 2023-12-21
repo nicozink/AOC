@@ -20,9 +20,9 @@ namespace AOC2020
         /// </summary>
         /// <param name="path">The file path.</param>
         /// <returns>The grouped answers.</returns>
-        IEnumerable<List<String>> ReadGroupAnswers(String path)
+        static IEnumerable<List<String>> ReadGroupAnswers(String path)
         {
-            List<String> groupAnswers = new List<string>();
+            List<String> groupAnswers = new ();
 
             var input = System.IO.File.ReadLines(path);
             foreach (var line in input)
@@ -48,7 +48,7 @@ namespace AOC2020
         /// </summary>
         /// <param name="path">The data for each group.</param>
         /// <returns>The distinct answers.</returns>
-        IEnumerable<String> ReadDistinctGroupAnswers(String path)
+        static IEnumerable<String> ReadDistinctGroupAnswers(String path)
         {
             var groupedAnswers = ReadGroupAnswers(path);
 
@@ -71,7 +71,7 @@ namespace AOC2020
         /// </summary>
         /// <param name="path">The data for each group.</param>
         /// <returns>The distinct answers.</returns>
-        IEnumerable<String> ReadIntersectedGroupAnswers(String path)
+        static IEnumerable<String> ReadIntersectedGroupAnswers(String path)
         {
             var groupedAnswers = ReadGroupAnswers(path);
 
@@ -88,13 +88,13 @@ namespace AOC2020
             }
         }
 
-        public int GetSolution1(String path)
+        public static int GetSolution1(String path)
         {
             var answers = ReadDistinctGroupAnswers(path);
             return answers.Sum(x => x.Length);
         }
 
-		public int GetSolution2(String path)
+		public static int GetSolution2(String path)
         {
             var answers = ReadIntersectedGroupAnswers(path);
             return answers.Sum(x => x.Length);
