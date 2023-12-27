@@ -17,5 +17,5 @@ jobs:
       run: dotnet build AOC.sln --configuration Release
     - name: MSTest
       shell: powershell
-      working-directory: bin\Release\net6.0
+      working-directory: bin\x64\Release\net6.0
       run: '& "$(vswhere -property installationPath)\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" AOC.dll'
